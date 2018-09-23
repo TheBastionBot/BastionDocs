@@ -12,3 +12,7 @@
 
 * [Configure Bastion](configure/configure-bastion.md)
 
+## Run
+
+* [Run on Linux](run/run-on-linux.md)
+
