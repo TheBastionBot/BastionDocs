@@ -15,4 +15,5 @@
 ## Run
 
 * [Run on Linux](run/run-on-linux.md)
+* [Run on macOS](run/run-on-macos.md)
 
