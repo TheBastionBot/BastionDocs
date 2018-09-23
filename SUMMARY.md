@@ -19,3 +19,7 @@
 * [Run on macOS](run/run-on-macos.md)
 * [Run on Windows](run/run-on-windows.md)
 
+## Update
+
+* [Update on Linux](update/update-on-linux.md)
+
