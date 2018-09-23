@@ -12,7 +12,7 @@ Then, it is as simple as running this:
 ./bastion.sh --update
 ```
 
-Wait for a few moments, so that it can update Bastion and the its dependencies that you need to run Bastion smoothly. Meanwhile, you can go grab a cup of coffee \(or tea, if you prefer that\).
+Wait for a few moments, so that it can update Bastion and its dependencies that you need to run Bastion smoothly. Meanwhile, you can go grab a cup of coffee \(or tea, if you prefer that\).
 
 Once it is done, it will let you know.
 
