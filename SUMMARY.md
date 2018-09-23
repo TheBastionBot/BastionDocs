@@ -22,4 +22,5 @@
 ## Update
 
 * [Update on Linux](update/update-on-linux.md)
+* [Update on macOS](update/update-on-macos.md)
 
