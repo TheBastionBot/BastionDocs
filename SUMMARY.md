@@ -6,4 +6,5 @@
 
 * [Prerequisites](install/prerequisites.md)
 * [Install on Linux](install/install-on-linux.md)
+* [Install on macOS](install/install-on-macos.md)
 
