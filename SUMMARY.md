@@ -8,3 +8,7 @@
 * [Install on Linux](install/install-on-linux.md)
 * [Install on macOS](install/install-on-macos.md)
 
+## Configure
+
+* [Configure Bastion](configure/configure-bastion.md)
+
