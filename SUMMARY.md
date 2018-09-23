@@ -8,6 +8,7 @@
 * [Install on Linux](install/install-on-linux.md)
 * [Install on macOS](install/install-on-macos.md)
 * [Install on Windows](install/install-on-windows.md)
+* [Install on Heroku](install/install-on-heroku.md)
 
 ## Configure
 
