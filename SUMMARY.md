@@ -17,4 +17,5 @@
 
 * [Run on Linux](run/run-on-linux.md)
 * [Run on macOS](run/run-on-macos.md)
+* [Run on Windows](run/run-on-windows.md)
 
