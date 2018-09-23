@@ -20,7 +20,7 @@ After you are done with customizing your Discord application, you will need to c
 
 After your bot comes to life, you will find a few more options in there. Make sure to disable the **Public Bot** and **Requires OAuth2 Code Grant** options.
 
-### Inviting your Bot to Discord {#invite-your-bot-to-discord}
+## Inviting your Bot to Discord
 
 You will need your bot's **Client ID** \(remember?\) during this step.
 
