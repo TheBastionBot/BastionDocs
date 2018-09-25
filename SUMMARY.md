@@ -10,6 +10,7 @@
 * [Install on macOS](install/install-on-macos.md)
 * [Install on Windows](install/install-on-windows.md)
 * [Install on Heroku](install/install-on-heroku.md)
+* [Install on Glitch](install/install-on-glitch.md)
 
 ## Configure
 
