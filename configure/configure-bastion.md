@@ -16,3 +16,17 @@ Make sure those files are present before you start Bastion. If they are not pres
 
 Now, open and edit the `config.json` and `credentials.json` files to add \(or edit\) the configurations and credentials of Bastion, respectively. And after you do that, save the files.
 
+#### Additional steps
+
+_This step is only necessary if you are hosting Bastion on Heroku._
+
+Now you need to copy these files to Heroku, whenever you make any changes to them. Run the following commands to push these files to Heroku:
+
+```bash
+git add -f settings/config.json settings/credentials.json
+git commit -m "Initial Bastion Configuration"
+git push heroku master
+```
+
+
+

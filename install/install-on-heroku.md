@@ -43,22 +43,5 @@ Before you can install Bastion in Heroku, you need these in your computer. Insta
   git push heroku master
   ```
 
-### Step 3: Configure Bastion
-
-* In your computer, copy the `config_example.json` and `credentials_example.json` files in the `settings` directory of Bastion and rename the copies to `config.json` and `credentials.json`, respectively.
-* Edit the `credentials.json` file to add/update your credentials like Discord IDs, token, API Keys, etc., and the `config.json` file to add/update initial settings of Bastion.
-* Make whatever changes you want and save them.
-* Now you need to copy these files to Heroku. Run the following commands to push these files to Heroku:
-
-  ```bash
-  git add -f settings/config.json settings/credentials.json
-  git commit -m "Initial Bastion Configuration"
-  git push heroku master
-  ```
-
-### Step 4: Run Bastion
-
-* Once you have pushed Bastion's configuration files to Heroku, Bastion will automatically start in a few seconds.
-
 
 
