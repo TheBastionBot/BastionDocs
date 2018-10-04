@@ -11,6 +11,7 @@
 * [Install on Windows](install/install-on-windows.md)
 * [Install on Heroku](install/install-on-heroku.md)
 * [Install on Glitch](install/install-on-glitch.md)
+* [Install on Glitch](install/install-on-glitch%20%281%29.md)
 
 ## Configure
 
@@ -21,6 +22,7 @@
 * [Run on Linux](run/run-on-linux.md)
 * [Run on macOS](run/run-on-macos.md)
 * [Run on Windows](run/run-on-windows.md)
+* [Run on Glitch](run/run-on-glitch.md)
 
 ## Update
 
