@@ -11,7 +11,7 @@ Before you can install Bastion in Heroku, you need these in your computer. Insta
 * [Git](https://git-scm.com/downloads)
 * [Heroku CLI](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up)
 
-### Step 1: Set up Heroku
+### Set up Heroku
 
 * Go to [Heroku](https://www.heroku.com/) and create a new account \(or login, if you already have an account\).
 * Open the Command Prompt \(Windows\) or Terminal \(Linux/macOS\) and run the following command:
@@ -22,7 +22,7 @@ Before you can install Bastion in Heroku, you need these in your computer. Insta
 
 * Enter your Heroku credentials as prompted and you will be logged in to Heroku.
 
-### Step 2: Install Bastion
+### Install Bastion
 
 * First you need to get Bastion in your local computer before you can install it in Heroku. Run the following command to clone Bastion into your computer:
 
