@@ -48,9 +48,5 @@ refresh
 
 * Now when can go back to your project editor, you’ll see that it has been updated.
 
-### Setup Bastion in Glitch {#setup-bastion-in-glitch}
 
-* You’ll see a list of Bastion’s files in the left side in Glitch.
-* Find the `settings/config_example.json` & `settings/credentials_example.json` files. _Don’t worry. Files are ordered alphabetically._
-* Make a copy of both the files and rename the copies to `settings/config.json` and `settings/credentials.json`, respectively.
 

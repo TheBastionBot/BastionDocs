@@ -1,9 +1,3 @@
----
-description: >-
-  Before you can install Bastion, you need to create a bot application on
-  Discord and invite your bot to your servers.
----
-
 # Prerequisites
 
 ## Creating Discord Bot Application

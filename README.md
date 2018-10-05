@@ -1,7 +1,3 @@
----
-description: Welcome to The Bastion Bot documentation site.
----
-
 # Introduction
 
 Here you’ll find documentation on how to install, set up, run and update Bastion, so that you can empower your Discord server and have an awesome bot for your communities.
