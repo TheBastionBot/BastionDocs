@@ -4,3 +4,41 @@
 # directory.
 - title: "Intro"
   link: "/"
+
+- title:
+- title: "INSTALL"
+
+- title: "Linux"
+  link: "/install/linux"
+- title: "macOS"
+  link: "/install/macos"
+- title: "Windows"
+  link: "/install/windows"
+- title: "Glitch"
+  link: "/install/glitch"
+- title: "Heroku"
+  link: "/install/heroku"
+
+- title:
+- title: "Configure"
+  link: "/configure"
+
+- title:
+- title: "RUN"
+
+- title: "Linux"
+  link: "/run/linux"
+- title: "macOS"
+  link: "/run/macos"
+- title: "Windows"
+  link: "/run/windows"
+
+- title:
+- title: "UPDATE"
+
+- title: "Linux"
+  link: "/update/linux"
+- title: "macOS"
+  link: "/update/macos"
+- title: "Windows"
+  link: "/update/windows"
