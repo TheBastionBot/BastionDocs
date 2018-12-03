@@ -1,0 +1,6 @@
+---
+# List of navigation links that's displaed in the left sidebar.
+# This should typically contain links to pages that you add in the `contents`
+# directory.
+- title: "Intro"
+  link: "/"
