@@ -1,4 +1,6 @@
-# Update on Linux
+---
+title: Update on macOS
+---
 
 To update Bastion, first of all, you will need to navigate into the `Bastion` directory. _That is where the script is!_
 
@@ -21,4 +23,3 @@ Now, you can start Bastion, as usual, simply by running:
 ```text
 ./bastion.sh --start
 ```
-

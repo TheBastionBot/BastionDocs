@@ -1,4 +1,6 @@
-# Install on Linux
+---
+title: Install on Linux
+---
 
 ## Downloading the installer
 
@@ -18,13 +20,15 @@ To start the installation process, simply run the installer:
 ./BastionInstaller.sh
 ```
 
-Wait for a few moments, so that it can download and install everything you will need to run Bastion smoothly. Meanwhile, you can go grab a cup of coffee \(or tea, if you prefer that\).
+Wait for a few moments, so that it can download and install everything you will
+need to run Bastion smoothly. Meanwhile, you can go grab a cup of coffee (or
+tea, if you prefer that).
 
 Once it is done, it will let you know.
 
-{% hint style="info" %}
-This will install Bastion into your `HOME` directory.
-{% endhint %}
+<note type="info">
+  This will install Bastion into your `HOME` directory.
+</note>
 
-Now, you will have a directory named `Bastion,` in your `HOME` directory, where Bastion is installed.
-
+Now, you will have a directory named `Bastion,` in your `HOME` directory, where
+Bastion is installed.

@@ -1,0 +1,27 @@
+---
+# Name of the website
+# Defaults to the title
+site_name: "Bastion Docs"
+
+# URL where the site will live
+site_url: "https://docs.bastionbot.org"
+
+# Title of the website
+title: "Bastion Docs"
+
+# Description of the website
+description: "Welcome to the documentation website of the Bastion bot."
+
+# Path to the logo of your site
+logo: "https://resources.bastionbot.org/logos/Bastion_Logotype_CD.png"
+
+# Link to, GitHub issue, for example, where users can send feedback
+feedback: "https://github.com/TheBastionBot/BastionDocs/issues"
+
+# Copyright notice that would be placed in the footer
+copyright: "Copyright © 2018 - The Bastion Bot Project"
+
+
+# Accent color of the site
+# Default: `#3eb0ef`
+color: "#40c4fb"
