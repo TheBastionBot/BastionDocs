@@ -6,6 +6,10 @@
   link: "/"
 
 - title:
+- title: "Prerequisites"
+  link: "/prerequisites"
+
+- title:
 - title: "INSTALL"
 
 - title: "Linux"
