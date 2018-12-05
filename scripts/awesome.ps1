@@ -14,9 +14,9 @@ Switch ($Args[0]) {
 
     yarn install --prod
 
-    Copy-Item "../content/*" "content/"
-    Copy-Item "../data/*" "data/"
-    Copy-Item "../static" "static"
+    Copy-Item -Recurse "../content/*" "content/"
+    Copy-Item -Recurse "../data/*" "data/"
+    Copy-Item -Recurse "../static/*" "static/"
 
     CD ..
     break
