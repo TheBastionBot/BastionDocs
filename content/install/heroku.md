@@ -51,5 +51,5 @@ Install them if you don't already have it.
   Bastion to Heroku:
 
   ```bash
-  git push heroku master
+  git push heroku stable:master
   ```
