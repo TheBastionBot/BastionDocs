@@ -7,7 +7,14 @@ title: Install on Linux
 Downloading the installer is a fairly straight forward process:
 
 ```bash
-wget https://raw.github.com/TheBastionBot/Bastion-Scripts/master/BastionInstaller.sh && chmod +x BastionInstaller.sh
+# For Debian and Ubuntu based Linux distributions
+curl -sL https://raw.github.com/TheBastionBot/BastionScripts/master/linux/apt.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
+
+# For Enterprise Linux/Fedora and Snap packages
+curl -sL https://raw.github.com/TheBastionBot/BastionScripts/master/linux/dnf.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
+
+# Or if you've a distro that uses `yum` package manager, we've got you!
+curl -sL https://raw.github.com/TheBastionBot/BastionScripts/master/linux/yum.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
 ```
 
 This will download the installer into the current directory.
