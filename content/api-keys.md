@@ -35,23 +35,6 @@ Fill up the given form with your name, email, website (you can also use
 
 Then you'll see your **API Key** under the Authentication section.
 
-## Battle.net API Key
-
-<note type="info">
-  Required by `wow` command.
-</note>
-
-Visit the [Battle.net Developer Portal](https://dev.battle.net).
-
-Login/Register your account (Click Login/Register at the top right corner).
-After you've (registered and) logged in, click on **Get API Keys**.
-
-Fill in the form with your details. You don't need to worry about the callback
-URL, but make sure you select **World of Warcraft** in the franchises dropdown.
-The **basic plan** should be adequate. After that click on **Register Application**.
-
-Then you'll see your **API Key** under the Keys section.
-
 ## Bungie API Key
 
 <note type="info">
@@ -111,7 +94,6 @@ Fill up the given form with your name, email, website (you can also use
 
 Then you'll see your **API Key** under the Authentication section.
 
-
 ## Google API Key
 
 <note type="info">
@@ -128,27 +110,6 @@ Now, enable **Google Static Maps API** and **URL Shortener API**.
 On the left tab, click **Credentials**. Then click **Create Credentials**
 button. Now click on **API Key**. A window will popup with your **Google API
 key.**
-
-## GitHub API Key
-
-<note type="info">
-  Required by `contributors` command. It would still work without it, but it's
-  limited to 60 requests per hour.
-</note>
-
-Go to the [GitHub Developer Settings > Personal Access Tokens](https://github.com/settings/tokens).
-
-Click on **Generate new token**.
-
-Write *Bastion Bot* (or anything you like) in the **Token Description**.
-
-In the **Select scopes** section, deselect everything. Bastion doesn't need to
-access any scopes, so it's better not to select any.
-
-Then click on **Generate token** button at the bottom to generate your new token.
-
-Copy the new token and keep it somewhere safe, as you won't be able to see it
-again for security reasons.
 
 ## HiRez API Key
 
@@ -167,32 +128,6 @@ HiRez **DevId** & **AuthKey**.
   anytime later.
 </note>
 
-## IGDB API Key
-
-<note type="info">
-  Required by `game` command.
-</note>
-
-Visit the [IGDB API Plans page](https://api.igdb.com/pricing).
-
-Signup for the plan as per your requirements. The **Free** plan should be
-enough though.
-
-After you've successfully signed up, you'll see your API Key in the
-**credentials** section of the page.
-
-## Musixmatch API Key
-
-<note type="info">
-  Required by `lyrics` command.
-</note>
-
-Visit [Musixmatch Developer site](https://developer.musixmatch.com/) and signup
-for a new accout (or signin if you already have one).
-
-When all the signup steps are completed, you'll get your Musixmatch API key.
-
-
 ## Patreon API Key
 
 <note type="info">
@@ -209,24 +144,6 @@ the bottom.
 Now that your client is registered, you'll see the required credentials listed
 under your client.
 
-
-## PUBG API Key
-
-<note type="info">
-  Required by `pubg` command.
-</note>
-
-Go to [PlayerUnknown's Battlegrounds Developer Portal](https://developer.playbattlegrounds.com/).
-
-Login/Register your account (Click MY APPS at the top right corner).
-After you've (registered and) logged in, click on **Register a New App**.
-
-Fill up the given form with the asked details like your name, app's name
-(Bastion), website (you can also use <https://bastionbot.org>), description,
-etc.
-
-After you've registered a new application, you'll get your **API Key**.
-
 ## Rocket League API Key
 
 <note type="info">
@@ -239,15 +156,6 @@ Only a selected few have access their API. And Bastion is one of them, so the
 public Bastion bot can make use of the `rocketLeague` command. As soon as they
 allow public access to their API, you can request an API key and use the
 `rocketLeague` command in your self hosted Bastion.
-
-## The Movie DB API Key
-
-<note type="info">
-  Required by `movie` and `tvShow` commands.
-</note>
-
-Read [The Movie Database FAQ](https://www.themoviedb.org/faq/api) to know how
-to get their API Key.
 
 ## Twitch API Key
 
