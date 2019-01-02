@@ -7,7 +7,7 @@ title: Install on macOS
 Downloading the installer is a fairly straight forward process:
 
 ```bash
-curl -sL https://raw.github.com/TheBastionBot/Bastion-Scripts/master/BastionInstaller_macOS.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
+curl -sL https://raw.github.com/TheBastionBot/BastionScripts/master/darwin/brew.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
 ```
 
 This will download the installer into the current directory.
