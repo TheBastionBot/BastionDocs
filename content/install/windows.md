@@ -4,17 +4,29 @@ title: Install on Windows
 
 ## Downloading the installer
 
-[Right Click here](https://raw.github.com/TheBastionBot/Bastion-Scripts/master/BastionInstaller.cmd)
-and Click **Save Link As…** and Save the file as `BastionInstaller.cmd`
+[Right Click here](https://raw.github.com/TheBastionBot/BastionScripts/master/windows/chocolatey.ps1)
+and Click **Save Link As…** and Save the file as `BastionInstaller.ps1`
 (Bastion Installer for Windows).
 
 ## Installing Bastion
 
-To start the installation process, simply **Right-Click** the downloaded file
-and Click **Run as Administrator**.
+First of all, open Windows PowerShell as Administrator. To do that, you can
+press the Start button, search for *PowerShell* and when *Windows PowerShell*
+appears in the search results, press <kbd>Ctrl</kbd> + <kbd>Shift</kbd> +
+<kbd>Enter</kbd>.
+
+Now, type the following command in the PowerShell window:
+```ps1
+powershell
+```
+(Note that there is a space after `powershell`)
+
+Then drag the `BastionInstaller.ps1` file you just download into the PowerShell
+window and press Enter.
 
 Wait for a few moments, so that it can download and install everything you will
-need to run Bastion smoothly. Meanwhile, you can go grab a cup of coffee (or tea, if you prefer that).
+need to run Bastion smoothly. Meanwhile, you can go grab a cup of coffee (or
+tea, if you prefer that).
 
 Once it is done, it will let you know.
 
