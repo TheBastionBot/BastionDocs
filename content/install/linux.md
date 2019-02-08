@@ -37,5 +37,5 @@ Once it is done, it will let you know.
   This will install Bastion into your `HOME` directory.
 </note>
 
-Now, you will have a directory named `Bastion,` in your `HOME` directory, where
+Now, you will have a directory named `Bastion` in your `HOME` directory, where
 Bastion is installed.
