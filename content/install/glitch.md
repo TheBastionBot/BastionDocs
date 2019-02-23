@@ -2,7 +2,7 @@
 title: Install on Glitch
 ---
 
-### Initial Setup (GitHub)
+### Initial Setup
 
 Before you can install Bastion in Glitch, the following steps needs to be
 performed:
@@ -12,7 +12,7 @@ performed:
   [**sign up**](https://github.com/join) for GitHub.
 * When you are signed in you can close out of GitHub.
 
-### Initial Setup (Glitch)
+### Installing
 
 * Go to [Glitch](https://glitch.com)
 * And then **Sign in with GitHub**.
@@ -24,8 +24,15 @@ performed:
 * Click on the **Tools** button (at the bottom left corner) in your Glitch project.
   Now click on the **Console**
   button and you’ll be redirected to your project’s console.
-* To install Bastion just type this command then press enter
+* To install Bastion just type this command then press enter:
 
   ```text
   rm -rf /app/* /app/.* 1>/dev/null; git clone -b stable https://github.com/TheBastionBot/Bastion.git ~/; refresh
   ```
+  What this command does is removes *all* files in the project. After that it downloads the code from Github into the project
+  and then `refresh` makes it so the files show up in Glitch.
+* If you do not see the settings folder then in the console type
+  ```text
+  rm ~/.gitignore; refresh
+  ```
+  What this does is removes the file that hides the settings folder.
