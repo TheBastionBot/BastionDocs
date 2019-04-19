@@ -14,6 +14,9 @@ curl -sL https://raw.github.com/TheBastionBot/BastionScripts/master/linux/dnf.sh
 # Or if you've a distro that uses `yum` package manager, we've got you!
 curl -sL https://raw.github.com/TheBastionBot/BastionScripts/master/linux/yum.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
 ```
+{% hint style="info" %}
+If you recieve an error saying curl not found run:
+`apt install curl` or `yum install curl`{% endhint %}
 
 This will download the installer into the current directory.
 
@@ -22,6 +25,9 @@ This will download the installer into the current directory.
 To start the installation process, simply run the installer:
 
 ```bash
+# Giving the file permissions
+chmod u+x ./BastionInstaller.sh
+# Running the installer
 ./BastionInstaller.sh
 ```
 
