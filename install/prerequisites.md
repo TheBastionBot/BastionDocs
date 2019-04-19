@@ -26,6 +26,9 @@ https://discordapp.com/oauth2/authorize?client_id=INSERT_CLIENT_ID_HERE&scope=bo
 
 You will be asked by Discord to select the server where you want to invite your bot. Select your server and invite your bot!
 
+You can also invite your discord bot by visiting the 0Auth2 Page and selecting the following:
+![Copy the link once you selected the options shown!](https://i.skidhost.club/files/090d51.png)
+
 {% hint style="info" %}
 You can only invite bots to the servers where you have the **Manage Server** permission. Members will **Administrator** permission have every permission in the server. So, if you have that, it will do fine.
 {% endhint %}
