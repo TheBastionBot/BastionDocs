@@ -27,7 +27,7 @@ Before you can install Bastion in Heroku, you need these in your computer. Insta
 * First you need to get Bastion in your local computer before you can install it in Heroku. Run the following command to clone Bastion into your computer:
 
   ```bash
-  git clone -b stable -q --depth 1 https://github.com/TheBastionBot/Bastion.git
+  git clone -b stable -q https://github.com/TheBastionBot/Bastion.git
   cd Bastion
   ```
 
