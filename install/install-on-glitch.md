@@ -18,7 +18,7 @@ rm -rf /app/* /app/.* &>/dev/null
 * First of all, we need install Bastion to your Glitch project. Run the following command to do that \(note the `.` at the end, don't forget that!\):
 
 ```bash
-git clone https://github.com/TheBastionBot/Bastion.git .
+git clone -b stable -q https://github.com/TheBastionBot/Bastion.git .
 ```
 
 * Bastion will now be imported to Glitch in a few seconds.
