@@ -27,4 +27,5 @@
 * [Update on Linux](update/update-on-linux.md)
 * [Update on macOS](update/update-on-macos.md)
 * [Update on Windows](update/update-on-windows.md)
+* [Update on Glitch](update/update-on-glitch.md)
 
