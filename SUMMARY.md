@@ -9,6 +9,7 @@
 * [Install on Linux](install/install-on-linux.md)
 * [Install on macOS](install/install-on-macos.md)
 * [Install on Windows](install/install-on-windows.md)
+* [Install on Docker](install/install-on-docker.md)
 * [Install on Glitch](install/install-on-glitch.md)
 * [Install on Heroku](install/install-on-heroku.md)
 
