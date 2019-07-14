@@ -22,6 +22,7 @@
 * [Run on Linux](run/run-on-linux.md)
 * [Run on macOS](run/run-on-macos.md)
 * [Run on Windows](run/run-on-windows.md)
+* [Run on Docker](run/run-on-docker.md)
 
 ## Update
 
@@ -29,4 +30,5 @@
 * [Update on macOS](update/update-on-macos.md)
 * [Update on Windows](update/update-on-windows.md)
 * [Update on Glitch](update/update-on-glitch.md)
+* [Update on Docker](update/update-on-docker.md)
 
