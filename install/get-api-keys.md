@@ -1,16 +1,16 @@
 # Get API Keys
 
-### Battlefield API Key
+### Tracker Network API Key
 
-Required by \`battlefield1\` and \`battlefield4\` commands.
+Required by `battlefield1`, `battlefield4` and `fortnite` commands.
 
-Go to [Battlefield Tracer Network Site](https://battlefieldtracker.com/site-api).
+Go to [Tracer Network Developers Site](https://tracker.gg/developers/apps).
 
-Login/Register your account \(Click Login/Register at the top right corner\). After you've \(registered and\) logged in, click on **Generate API key**.
+Login/Register for an account. After you've \(registered and\) logged in, click on the **Create Application** button \(at the top left corner\).
 
-Fill up the given form with your name, email, website \(you can also use [https://bastionbot.org](https://bastionbot.org)\) and description. After that click on **Generate API key**.
+Fill up the given form with app name \(Bastion\), your email, and a description. After that click on **Create App**.
 
-Then you'll see your **API Key** under the Authentication section.
+Then you'll see your **API Key** under the **Credentials & Authorization** section of the application you just created.
 
 ### Bungie API Key
 
@@ -45,18 +45,6 @@ Allowed IP addresses requires the IP address of your Bastion bot. You can get yo
 After that click **Create Key** and now you should have your API key.
 
 Copy the key and add it into the **credentials** file.
-
-### Fortnite API Key
-
- Required by \`fortnite\` command.
-
-Go to [Fortnite Tracer Network Site](https://fortnitetracker.com/site-api).
-
-Login/Register your account \(Click Login/Register at the top right corner\). After you've \(registered and\) logged in, click on **Generate API key**.
-
-Fill up the given form with your name, email, website \(you can also use [https://bastionbot.org](https://bastionbot.org)\) and description. After that click on **Generate API key**.
-
-Then you'll see your **API Key** under the Authentication section.
 
 ### Google API Key
 
