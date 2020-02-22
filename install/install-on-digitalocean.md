@@ -1,7 +1,7 @@
 ---
 description: >-
   Follow this guide to install Bastion on DigitalOcean and keep it running for
-  24 hours.
+  24 x 7.
 ---
 
 # Install on DigitalOcean
