@@ -12,6 +12,7 @@
 * [Install on Docker](install/install-on-docker.md)
 * [Install on Glitch](install/install-on-glitch.md)
 * [Install on Heroku](install/install-on-heroku.md)
+* [Install on DigitalOcean](install/install-on-digitalocean.md)
 
 ## Configure
 
