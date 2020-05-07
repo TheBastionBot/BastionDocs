@@ -1,9 +1,8 @@
 # Update on Glitch
 
 * To update Bastion, first of all, go to your Glitch project.
-* Click on the **Tools** button at the bottom left corner and then click on the **Logs** button.
-* Once the Log window opens up, click on the **Console** button at the top of the Log window.
-* Type the follow command in the Console and Bastion will be updated:
+* Click on the **Tools** button at the bottom left corner and then click on the **Terminal** button.
+* Type the follow command in the Terminal and Bastion will be updated:
 
 ```bash
 git pull
