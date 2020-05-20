@@ -33,3 +33,7 @@
 * [Update on Glitch](update/update-on-glitch.md)
 * [Update on Docker](update/update-on-docker.md)
 
+## Developers
+
+* [Plugins](plugins.md)
+
