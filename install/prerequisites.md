@@ -32,3 +32,9 @@ You can only invite bots to the servers where you have the **Manage Server** per
 
 Now go and check out your server and you will find that your bot has joined your server.
 
+### Install MongoDB
+
+Bastion uses MongoDB as its internal data store. Please install it for your operating system before proceeding with the installation, if you haven't already.
+
+[https://www.mongodb.com/download-center/community](https://www.mongodb.com/download-center/community)
+
