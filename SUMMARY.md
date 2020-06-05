@@ -10,8 +10,6 @@
 * [Install on macOS](install/install-on-macos.md)
 * [Install on Windows](install/install-on-windows.md)
 * [Install on Docker](install/install-on-docker.md)
-* [Install on Glitch](install/install-on-glitch.md)
-* [Install on Heroku](install/install-on-heroku.md)
 * [Install on DigitalOcean](install/install-on-digitalocean.md)
 
 ## Configure
@@ -30,7 +28,6 @@
 * [Update on Linux](update/update-on-linux.md)
 * [Update on macOS](update/update-on-macos.md)
 * [Update on Windows](update/update-on-windows.md)
-* [Update on Glitch](update/update-on-glitch.md)
 * [Update on Docker](update/update-on-docker.md)
 
 ## Developers
