@@ -8,15 +8,17 @@
 
 First of all, open Windows PowerShell as Administrator. To do that, you can press the Start button, search for _PowerShell_ and when _Windows PowerShell_ appears in the search results, press Ctrl + Shift + Enter.
 
-Now, type the following command in the PowerShell window:
+`cd` into the directory where you downloaded the `BastionInstaller.ps1`:
 
-```text
-powershell
+```bash
+cd %USERPROFILE%\Downloads
 ```
 
-\(Note that there is a space after `powershell`\)
+Now, type the following command in the PowerShell window:
 
-Then drag the `BastionInstaller.ps1` file you just download into the PowerShell window and press Enter.
+```bash
+powershell -ExecutionPolicy Unrestricted .\BastionInstaller.ps1
+```
 
 Wait for a few moments, so that it can download and install everything you will need to run Bastion smoothly. Meanwhile, you can go grab a cup of coffee \(or tea, if you prefer that\).
 
