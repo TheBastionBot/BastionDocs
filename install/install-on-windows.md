@@ -6,7 +6,7 @@
 
 ### Installing Bastion
 
-First of all, open Windows PowerShell as Administrator. To do that, you can press the Start button, search for _PowerShell_ and when _Windows PowerShell_ appears in the search results, press Ctrl + Shift + Enter.
+First of all, open **Command Prompt** as Administrator. To do that, you can press the Start button, search for "cmd" and when Command Prompt __appears in the search results, press `Ctrl` + `Shift` + `Enter`.
 
 `cd` into the directory where you downloaded the `BastionInstaller.ps1`:
 
@@ -14,7 +14,7 @@ First of all, open Windows PowerShell as Administrator. To do that, you can pres
 cd %USERPROFILE%\Downloads
 ```
 
-Now, type the following command in the PowerShell window:
+Now, type the following command in the Command Prompt window:
 
 ```bash
 powershell -ExecutionPolicy Unrestricted .\BastionInstaller.ps1
