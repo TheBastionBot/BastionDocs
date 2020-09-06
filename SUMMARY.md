@@ -32,5 +32,7 @@
 
 ## Developers
 
+---
+
 * [Plugins](plugins.md)
 

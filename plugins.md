@@ -4,14 +4,12 @@ description: Here you'll find documentation on Bastion's Plugin System.
 
 # Plugins
 
-Bastion v8 is on the horizon, and will be getting released soon. The alpha & beta releases are already released to our [**Early Access Patrons**](https://patreon.com/bastionbot) so that they can test v8 before it's released to the public.
-
-With v8, we introduced the **Plugin System**. This enables users to add plugins to their instance of Bastion and extend the default features of Bastion.
+Bastion v8 was [recently released](https://notes.traction.one/posts/6674640902554005511). With v8, we introduced the **Plugin System**. This enables users to add plugins to their instance of Bastion and extend the default features of Bastion.
 
 This documentation documents how to create plugins for Bastion so that developers can create amazing plugins for Bastion that can be used by anyone hosting their own instance of Bastion.
 
 {% hint style="info" %}
-This documentation is very much a work in progress as v8 hasn't been publicly released yet. And, therefore, it might change in any way before the public release. So, keep referring this doc for updated info about Bastion Plugins. If you've any issues or questions, feel free to ask them in [Bastion HQ](https://discord.gg/fzx8fkt).
+This documentation is updated when there's any change to the internals of Bastion. So, keep referring this doc for updated info about Bastion Plugins. If you've any issues or questions, feel free to ask them in [Bastion HQ](https://discord.gg/fzx8fkt).
 {% endhint %}
 
 ## Get Started
@@ -52,9 +50,9 @@ We'll follow the rest of the guide assuming you've setup your repository structu
 
 Command plugins are used to add additional commands to Bastion. There's basically three things you need to know before you can start creating command plugins.
 
-* [ ] All the commands in your plugin should go inside the `commands` directory.
-* [ ] Command file names should be camelCased and should be exactly same as the command name.
-* [ ] Command Class Names should be TitleCased and should use the suffix `CommandPlugin`. e.g. if your  command is `jedi`, The command class should be `JediCommandPlugin`.
+* [x] All the commands in your plugin should go inside the `commands` directory.
+* [x] Command file names should be camelCased and should be exactly same as the command name.
+* [x] Command Class Names should be TitleCased and should use the suffix `CommandPlugin`. e.g. if your  command is `jedi`, The command class should be `JediCommandPlugin`.
 
 #### Command Configurations
 
@@ -133,8 +131,8 @@ For plugins and developers to be verified, we need to have some basic guidelines
 
 ### Plugin Guidelines
 
-* [ ] Repository name should be in this format - `bastion-PLUGIN-NAME-plugin` - replace `PLUGIN-NAME` with the name of your plugin \(lowercase\).
-* [ ] Directory structure of your plugin should be exactly the same as [our template repository](https://github.com/TheBastionBot/bastion-example-plugin). 
-* [ ] A plugin should do one specific task. It shouldn't be some "multi-purpose" plugin. Let's face it, no one likes bloatware. Users shouldn't have to install a plugin that does 5 different things when they only need it to do the one thing they require. One plugin, one task - as simple as that.
-* [ ] Plugin names shouldn't conflict with the existing names in their respective modules.
+* [x] Repository name should be in this format - `bastion-PLUGIN-NAME-plugin` - replace `PLUGIN-NAME` with the name of your plugin \(lowercase\).
+* [x] Directory structure of your plugin should be exactly the same as [our template repository](https://github.com/TheBastionBot/bastion-example-plugin). 
+* [x] A plugin should do one specific task. It shouldn't be some "multi-purpose" plugin. Let's face it, no one likes bloatware. Users shouldn't have to install a plugin that does 5 different things when they only need it to do the one thing they require. One plugin, one task - as simple as that.
+* [x] Plugin names shouldn't conflict with the existing names in their respective modules.
 
