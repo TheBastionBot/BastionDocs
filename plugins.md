@@ -38,7 +38,7 @@ Bastion currently allows plugins for these internal modules:
 * Interrupts
 * **Listeners**
 * Monitors
-* Schedulers
+* **Schedulers**
 
 We'll go through each of these modules and see what they do and how we can create a plugin for that module.
 
@@ -48,11 +48,11 @@ We'll follow the rest of the guide assuming you've setup your repository structu
 
 ### Commands Plugin
 
-Command plugins are used to add additional commands to Bastion. There's basically three things you need to know before you can start creating command plugins.
+Command plugins are used to add additional commands to Bastion. There're basically three things you need to know before you can start creating command plugins.
 
 * [x] All the commands in your plugin should go inside the `commands` directory.
 * [x] Command file names should be camelCased and should be exactly the same as the command name.
-* [x] Command Class Names should be TitleCased and should use the suffix `CommandPlugin`. e.g. if your  command is `jedi`, The command class should be `JediCommandPlugin`.
+* [x] Command Class names should be TitleCased and should use the suffix `CommandPlugin`. e.g. if your  command is `jedi`, The command class should be `JediCommandPlugin`.
 
 #### Command Configurations
 
@@ -113,11 +113,11 @@ public async exec(message: Message, argv: CommandArguments): Promise<unknown>;
 
 ### Listeners Plugin
 
-Listener plugins are used to add additional listeners to Bastion that'll listen to native Discord events. There's basically three things you need to know before you can start creating listener plugins.
+Listener plugins are used to add additional listeners to Bastion that'll listen to native Discord events. There're basically three things you need to know before you can start creating listener plugins.
 
 * [x] All the listeners in your plugin should go inside the `listeners` directory.
 * [x] Listener file names should be camelCased.
-* [x] Listener Class Names should be TitleCased and should use the suffix `ListenerPlugin`. e.g. if your  listener is `gravitationalWave`, The listener class should be `GravitationalWaveListenerPlugin`.
+* [x] Listener Class names should be TitleCased and should use the suffix `ListenerPlugin`. e.g. if your  listener is `gravitationalWave`, The listener class should be `GravitationalWaveListenerPlugin`.
 
 #### Supported Events
 
@@ -146,7 +146,42 @@ public async exec(...args: unknown[]): Promise<unknown>;
 
 ### Schedulers Plugin
 
-\# TODO
+Scheduler plugins are used to add additional schedulers to Bastion that'll get executed at the scheduled time - based on `cron` expression. There're basically four things you need to know before you can start creating scheduler plugins.
+
+* [x] All the schedulers in your plugin should go inside the `schedulers` directory.
+* [x] Scheduler file names should be camelCased and should be exactly the same as the scheduler name.
+* [x] Scheduler Class names should be TitleCased and should use the suffix `SchedulerPlugin`. e.g. if your scheduler is `birthday`, The scheduler class should be `BirthdaySchedulerPlugin`.
+
+#### Scheduler Configurations
+
+The scheduler configuration is done in the constructor of the scheduler class by calling the `super` class constructor with the scheduler name and scheduler configurations as the arguments. You can see an example configuration in your repository in the `example` scheduler, if you used our template to create your repository.
+
+Here, we'll see what all these configurations mean and what kind of data they take.
+
+```typescript
+// A valid 6 point cron expression - * * * * * *
+// Format:
+//   Second         0-59 or * or range
+//   Minute         0-59 or * or range
+//   Hour           0-23 or * or range
+//   Day of month   1-31 or * or range
+//   Month          1-12 or * or range
+//   Day of week    0-7 (0 or 7 is SUN) or * or range
+cronTime: string;
+```
+
+#### Scheduler Logic
+
+The logic for the scheduler is what gets executed when the cron time is satisfied. If you see the `example` scheduler in the repository, there's an `exec` method in the scheduler class. Your scheduler's logic goes inside this method.
+
+Here's the signature of the `exec` method.
+
+```typescript
+/**
+ * @returns {void}
+ */
+public async exec(): Promise<void>;
+```
 
 ## Verified Plugins & Developers
 
