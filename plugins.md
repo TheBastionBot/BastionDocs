@@ -36,7 +36,7 @@ Bastion currently allows plugins for these internal modules:
 
 * **Commands**
 * Interrupts
-* Listeners
+* **Listeners**
 * Monitors
 * Schedulers
 
@@ -51,7 +51,7 @@ We'll follow the rest of the guide assuming you've setup your repository structu
 Command plugins are used to add additional commands to Bastion. There's basically three things you need to know before you can start creating command plugins.
 
 * [x] All the commands in your plugin should go inside the `commands` directory.
-* [x] Command file names should be camelCased and should be exactly same as the command name.
+* [x] Command file names should be camelCased and should be exactly the same as the command name.
 * [x] Command Class Names should be TitleCased and should use the suffix `CommandPlugin`. e.g. if your  command is `jedi`, The command class should be `JediCommandPlugin`.
 
 #### Command Configurations
@@ -113,7 +113,32 @@ public async exec(message: Message, argv: CommandArguments): Promise<unknown>;
 
 ### Listeners Plugin
 
-\# TODO
+Listener plugins are used to add additional listeners to Bastion that'll listen to native Discord events. There's basically three things you need to know before you can start creating listener plugins.
+
+* [x] All the listeners in your plugin should go inside the `listeners` directory.
+* [x] Listener file names should be camelCased.
+* [x] Listener Class Names should be TitleCased and should use the suffix `ListenerPlugin`. e.g. if your  listener is `gravitationalWave`, The listener class should be `GravitationalWaveListenerPlugin`.
+
+#### Supported Events
+
+You can only create listeners for events that are received from Discord. Well, technically, you can create others too, but it won't get executed as there would be no emitter for it.
+
+To get a list of supported events, you can go [here](https://discord.js.org/#/docs/main/stable/class/Client).
+
+#### Listener Logic
+
+The logic for the listener is what gets executed when the event is emitted. If you see the `example` listener in the repository, there's an `exec` method in the listener class. Your listener's logic goes inside this method.
+
+Here's the signature of the `exec` method.
+
+```typescript
+/**
+ * Refer the discord.js documentation for the parameters
+ * of the event listener you're implementing.
+ * @ref https://discord.js.org/#/docs/main/stable/class/Client
+ */
+public async exec(...args: unknown[]): Promise<unknown>;
+```
 
 ### Monitors Plugin
 
