@@ -1,6 +1,6 @@
 # Run on Docker
 
-To function properly, Bastion needs a the following at the least:
+To function properly, Bastion needs the following at the least:
 Bot Token
 Owner ID
 MongoDB Connection URI
