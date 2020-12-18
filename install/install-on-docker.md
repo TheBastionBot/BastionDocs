@@ -1,8 +1,6 @@
 # Install on Docker
 
-{% hint style="warning" %}
-Docker guide hasn't been updated for Bastion v8, yet. Thank you for your patience.
-{% endhint %}
+
 
 ### Ensuring Docker is installed
 
@@ -25,29 +23,13 @@ If you didn't get the output as per above, ensure Docker has been properly insta
 
 #### This guide was written with using Linux commands, and assumes you are using a Linux machine.
 
-Create volumes for the Bastion data to sit on, this is to ensure that bastion can both start correctly and save configuration data, such as prefixes and any settings you set.
+Ensure you have MongoDB installed either locally on a machine on your local network OR have MongoDB Atlas setup and ready. The base Bastion image Does Not include Mongo.
 
-Database files:
+Make sure to keep your Atlas connection url, database user and password handy.
 
-```text
-$ docker volume create bastion_data
-```
+Bastion's Docker image has support for ENV's now so unless you need to run cron jobs or wish to have more than 2 prefixes or owners i would recommend sticking to using ENV's.
 
-Configuration files:
-
-```text
-$ mkdir bastion_settings
-```
-
-To stay on the safe side, to check your volume was created properly, run:
-
-```text
-$ docker volume ls
-DRIVER              VOLUME NAME
-local               bastion_data
-```
-
-and check the output.
+If you intend to run the image on a system that you dont own i recommemd filling out an env file and passing in the ENV's through that. otherwise anyone who has access to the docker runtime can pull your bot token.
 
 ### Preparation
 
@@ -61,51 +43,23 @@ latest: Pulling from joshj23/bastionbot
 Digest: sha256:13db470f4a2de34fd76e27c14d307595754c87cd9c1ce41e7a346336df507a06
 Status: Image is up to date for joshj23/bastionbot:latest
 ```
+{% hint style="warning" %}
+Digest hash will vary depending on the version, it's fine if yours doesnt match.
+{% endhint %}
 
-Download the `credentials.yaml` and the `configurations.yaml` files and put them in the `bastion_settings` folder you created earlier. \(if you created the folder with a different name, adjust accordingly\)
+### Running Bastion with configuration and credential files
 
-```text
-cd ~/bastion_settings && wget https://raw.githubusercontent.com/TheBastionBot/Bastion/stable/settings/configurations.example.yaml && wget https://raw.githubusercontent.com/TheBastionBot/Bastion/stable/settings/credentials.example.yaml && mv configurations.example.yaml configurations.yaml && mv credentials.example.yaml credentials.yaml && ls
-```
+If you wish to skip using ENV's you can still use config files akin to how it was done in V7.
 
-Ensure the output looks similar to the output below, the two files listed at the end are an essential part when configuring Bastion
+You'll want to grab the `credentials.example.yaml` and `configurations.example.yaml` from Bastion's github repository.
+rename them to `credentials.yaml` and `configurations.yaml` respectively.
+https://github.com/TheBastionBot/Bastion/tree/master/settings
 
-```text
-$ cd ~/bastion_settings && wget https://raw.githubusercontent.com/TheBastionBot/Bastion/stable/settings/configurations.example.yaml && wget https://raw.githubusercontent.com/TheBastionBot/Bastion/stable/settings/credentials.example.yaml && mv configurations.example.yaml configurations.yaml && mv credentials.example.yaml credentials.yaml && ls
-
---2019-07-13 20:19:22--  https://raw.githubusercontent.com/TheBastionBot/Bastion/stable/settings/configurations.example.yaml
-Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.28.133
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.28.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 1525 (1.5K) [text/plain]
-Saving to: ‘configurations.example.yaml’
-
-configurations.exampl 100%[========================>]   1.49K  --.-KB/s    in 0s      
-
-2019-07-13 20:19:22 (25.7 MB/s) - ‘configurations.example.yaml’ saved [1525/1525]
-
---2019-07-13 20:19:22--  https://raw.githubusercontent.com/TheBastionBot/Bastion/stable/settings/credentials.example.yaml
-Loaded CA certificate '/etc/ssl/certs/ca-certificates.crt'
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 151.101.28.133
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|151.101.28.133|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 1064 (1.0K) [text/plain]
-Saving to: ‘credentials.example.yaml’
-
-credentials.example.y 100%[========================>]   1.04K  --.-KB/s    in 0s      
-
-2019-07-13 20:19:23 (34.3 MB/s) - ‘credentials.example.yaml’ saved [1064/1064]
-
-configurations.yaml  credentials.yaml
-
-```
+There will be a special section in the `Run on Docker` page. For now head onto the next step
 
 ### Configuring Bastion
 
 At this stage, we need to configure Bastion.
-
-You will not have a `settings` folder, instead use the folder created earlier, with the `credentials.yaml` and `configurations.yaml` files.
 
 Head over to the `Configure Bastion` page and once configured, head over to the `Run on Docker` page
 
