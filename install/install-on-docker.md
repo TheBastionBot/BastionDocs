@@ -55,11 +55,11 @@ You'll want to grab the `credentials.example.yaml` and `configurations.example.y
 rename them to `credentials.yaml` and `configurations.yaml` respectively.
 https://github.com/TheBastionBot/Bastion/tree/master/settings
 
-There will be a special section in the `Run on Docker` page. For now head onto the next step
 
 ### Configuring Bastion
 
-At this stage, we need to configure Bastion.
+At this stage, we are done, Head over to the `Run on docker` page.
+If you plan to use the config files mentioned one step above, keep reading. Otherwise head straight to the `Run on Docker` page.
 
 Head over to the `Configure Bastion` page and once configured, head over to the `Run on Docker` page
 
