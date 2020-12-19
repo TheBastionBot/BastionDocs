@@ -1,22 +1,70 @@
 # Run on Docker
 
-To run Bastion within Docker, simply run:
+To function properly, Bastion needs to following at the bare minimum:
+
+* Bot Token
+* Owner ID
+* MongoDB Connection URI
+
+You can get these from the `Prerequisites` page. 
+
+The following example will run Bastion with a container name of `Bastion`,prefix of `#!` and will be `Watching for commands`.
 
 ```text
-docker run -d --mount type=bind,source=/home/$USER/bastion_settings,target=/usr/src/Bastion/settings --mount source=bastion_data,target=/usr/src/Bastion/data joshj23/bastionbot
+docker run -d --name=Bastion -e P_PREFIX='#!' -e A_TYPE='WATCHING' -e A_NAME='for commands' -e P_OWNER_ID='primary owner id' -e TOKEN='token' -e DB='mongodb+srv://' joshj23/bastionbot
 ```
 
-#### If you changed any folder names or the volume name, the above command will not work, you need to change it with respect to the folder and volume names
+Each config option is added using `-e option='value'`.
 
-When you start the container, if it was started successfully it would show a long string of random numbers and letters, this is the container id, use that container id with the following command: `docker logs Container_ID`
+For example, to add a second Owner ID, you would add `-e s_OWNER_ID='ID_HERE'` before `joshj23/bastionbot`
+
+If you need more than 2 prefixes, owner ID's or cron jobs you will need to use config files.
+
+#### Using config files
+
+If you need to \(or want to\) use config files, you can skip over ENV's entirely.
+
+make sure you have an empty directory for Bastion's settings files, and download both the `credentials.example.yaml` and `configurations.example.yaml` and rename them to `credentials.yaml` and `configurations.yaml` respectively, and move them into said directory.
+
+You want to bind mount the aforementioned settings directory to the containers `/usr/src/Bastion/files` directory. if you try to mount directly to `/usr/src/Bastion/settings` your values will most likely be overriden during container boot.
 
 ```text
-$ docker run -d --mount type=bind,source=/home/$USER/bastion_settings,target=/usr/src/Bastion/settings --mount source=bastion_data,target=/usr/src/Bastion/data joshj23/bastionbot
-
-5fa0bc42a9e70b1d07727bb5082bb6f1de4e4b923f341ca8d56e34fa3f22c780
-THIS IS THE CONTAINER ID ^
-$ docker logs 5fa0bc42a9e70b1d07727bb5082bb6f1de4e4b923f341ca8d56e34fa3f22c780
+$ docker run -d --name=Bastion --mount type=bind,source=/home/$USER/bastion_settings,target=/usr/src/Bastion/files joshj23/bastionbot
 ```
 
-If all went well, Bastion should now be online and responding to commands in your server.
+You may with to check the container logs to make sure the bot started correctly.
+
+If all went well, bastion should now be online and responding to commands in your server.
+
+#### ENV's
+
+Check the config files if you are unsure what links where
+
+#### Configurations
+
+| ENV | Value |
+| :--- | :--- |
+| P\_PREFIX | Primary bot prefix |
+| S\_PREFIX | Secondary bot prefix |
+| A\_TYPE | Activity type \(see config files on github\) |
+| A\_NAME | Activity name |
+| TWITCH\_URL |  |
+| UNSAFE\_MODE |  |
+| MUSIC\_ACTIVITY |  |
+| API\_PORT |  |
+
+#### Credentials
+
+| ENV | Value |
+| :--- | :--- |
+| P\_OWNER\_ID | Primary owner ID |
+| S\_OWNER\_ID | Secondary owner ID |
+| TOKEN | Bot token |
+| DB | Mongo URI |
+| G\_API | Google api key |
+| TWITCH\_ID |  |
+| TWITCH\_SECRET |  |
+| TWITCH\_TOKEN |  |
+| WEBHOOK\_ID |  |
+| WEBHOOK\_TOKEN |  |
 
