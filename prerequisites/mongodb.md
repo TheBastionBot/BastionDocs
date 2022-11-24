@@ -1,33 +1,37 @@
 # Setup Database
 
-You can either install MongoDB on your own system or use MongoDB cloud service like MongoDB Atlas.
+Bastion uses MongoDB as its data store. You can either install MongoDB on your own system or use MongoDB cloud service like MongoDB Atlas.
+
+{% hint style="info" %}
+You only need to follow one of these steps.
+{% endhint %}
 
 ### Install MongoDB <a href="#install-mongodb" id="install-mongodb"></a>
 
-Bastion uses MongoDB as its internal data store. Please install it for your operating system before proceeding with the installation, if you haven't already.
+If you want to install MongoDB on your on system follow the installation guide for your operating system before proceeding with the installation.
 
 {% embed url="https://www.mongodb.com/docs/manual/administration/install-community/" %}
-Follow the guide for your Operating System
-{% endembed %}
 
 ### Use MongoDB Atlas
 
+Head over to [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas) and signup for a new account.
+
+Create a database cluster by going to **Database > Create**.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>MongoDB Atlas provides provides one free shared cluster that should be more than enough for Bastion.</p></figcaption></figure>
+
+Add a database user by going to Database Users > Add new user.
+
+Use **Password** authentication method. The set the username and password you want. Ensure it is secure though.
+
+Add a **Built-in Role** and select the **Read and write to any database** option and click **Add User** to create the database user.
+
+Now head back to **Database** and click on **Connect > Connect your application**.
+
+Copy the connection URI and replace the `<password>` in the URI to the password you set for the database user you created earlier.
+
 {% hint style="info" %}
-This step isn't needed if you plan to or already have setup MongoDB on your local network or where you are hosting Bastion.
-{% endhint %}
+The URI will look like the following. Make sure to replace `<password>` and `<dbname>`, `<username>` and `<cluster>` will be filled out for you.
 
-If you plan to host on services such as Docker, Heroku or don't have the means to setup a local installation of MongoDB, you can use a service called MongoDB Atlas.
-
-Head over to [https://www.mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas), register an account and setup a basic cluster.
-
-Once the cluster is setup and ready, head over to `Database Access` and add a database user.
-
-You can use any User name and Password you want. Ensure it is secure though. Once done make sure that `MongoDB Roles` is set to `readWriteAnyDatabase@admin` and not `Atlas admin`.
-
-Now head back to `Clusters` and click on `CONNECT`, `Connect your application`, and copy the URI.
-
-{% hint style="info" %}
-The URI will look like the following. Make sure to replace \<password> and \<dbname>, \<user> and \<cluster\_ip> will be filled out for you.
-
-mongodb+srv://\<user>:\<password>@\<cluster\_ip>.mongodb.net/\<dbnamne>?retryWrites=true\&w=majority
+`mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbnamne>?retryWrites=true&w=majority`
 {% endhint %}

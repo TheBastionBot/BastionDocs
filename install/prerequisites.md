@@ -32,7 +32,7 @@ https://discord.com/oauth2/authorize?client_id=INSERT_APP_ID_HERE&scope=bot&perm
 
 You will be asked by Discord to select the server where you want to invite your bot. Select your server and invite your bot!
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You can only invite bots to the servers where you have the **Manage Server** permission. Members with **Administrator** permission have every permission in the server. So, if you have that, it will do fine.

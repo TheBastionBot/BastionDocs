@@ -4,7 +4,7 @@
 
 ## Prerequisites
 
-* [Add Bot to Server](prerequisites/create.md)
+* [Add Bot to Server](install/prerequisites.md)
 * [Setup Database](prerequisites/mongodb.md)
 
 ## 📥 Install
