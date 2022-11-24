@@ -6,10 +6,10 @@
 
 * [Add Bot to Server](install/prerequisites.md)
 * [Setup Database](prerequisites/mongodb.md)
+* [Get API Keys](prerequisites/get-api-keys.md)
 
 ## 📥 Install
 
-* [Get API Keys](install/get-api-keys.md)
 * [Install on Linux](install/install-on-linux.md)
 * [Install on macOS](install/install-on-macos.md)
 * [Install on Windows](install/install-on-windows.md)
