@@ -2,33 +2,37 @@
 
 ## Creating Discord Bot Application
 
-Go to the [Discord Developer portal](https://discordapp.com/developers/applications/). You will need to login with your Discord account, that you want your bot to be associated with, to create a Discord application.
+Go to the [Discord Developer portal](https://discordapp.com/developers/applications/).
 
-After you've logged in, click on the **Create an application** button.
+After you've logged in, click on the **New Application** button.
 
 Here you can set some cool the name for your application, like Dark Lord or _Bastion!_ You can also set a neat avatar for your bot that will be displayed to everyone in Discord.
 
-Here, you will also find the **Client ID** of your bot. You will need this a few times during the installation process. So remember to come back here when required, so save it somewhere you can always refer to.
+<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-After you are done with customizing your Discord application, you will need to create a bot that will be associated with that application. To do that, go to the **Bot** section (in the left sidebar) and then click on the **Add Bot** button to give your application a visible life in Discord.
+After you are done with customizing your Discord application, you will need to create a bot that will be associated with that application. To do that, go to the **Bot** tab in the left sidebar and then click on the **Add Bot** button to give your application a visible life in Discord.
 
-After your bot comes to life, you will find a few more options in there. Make sure to disable the **Public Bot** and **Requires OAuth2 Code Grant** options.
+After you create a bot, you will find a few more options in there.
 
-{% hint style="info" %}
-You also need to enable both the options available for **Privileged Gateway Intents**, namely the **Presence Intent** and the **Server Members Intent**.
-{% endhint %}
+Make sure to disable the **Public Bot** and **Requires OAuth2 Code Grant** options and enable the **Presence Intent**, **Server Members Intent** and **Message Content Intent** options.
+
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption><p>Disable the <strong>Public Bot</strong> and <strong>Requires OAuth2 Code Grant</strong> options.</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Enable the <strong>Presence Intent</strong>, <strong>Server Members Intent</strong> and <strong>Message Content Intent</strong> options.</p></figcaption></figure>
 
 ## Inviting your Bot to Discord
 
 You will need your bot's **Client ID** (remember?) during this step.
 
-Copy the following link, and replace the `INSERT_CLIENT_ID_HERE` part with your bot's **Client ID** and visit the link.
+Copy the following link, and replace the `INSERT_APP_ID_HERE` in the URL with your bot's **Application ID** and paste the link in your browser and follow the instructions.
 
 ```diff
-https://discordapp.com/oauth2/authorize?client_id=INSERT_CLIENT_ID_HERE&scope=bot&permissions=8
+https://discord.com/oauth2/authorize?client_id=INSERT_APP_ID_HERE&scope=bot&permissions=8
 ```
 
 You will be asked by Discord to select the server where you want to invite your bot. Select your server and invite your bot!
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You can only invite bots to the servers where you have the **Manage Server** permission. Members with **Administrator** permission have every permission in the server. So, if you have that, it will do fine.
