@@ -2,7 +2,9 @@
 
 ## Creating Discord Bot Application
 
-Go to the [Discord Developer portal](https://discordapp.com/developers/applications/).
+Go to the [Discord Developer portal](https://discord.com/developers/applications).
+
+{% embed url="https://discord.com/developers/applications" %}
 
 After you've logged in, click on the **New Application** button.
 
