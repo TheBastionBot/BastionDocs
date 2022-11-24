@@ -6,64 +6,20 @@ description: >-
 
 # Get API Keys
 
-### CoinMarketCap API Key
-
-{% hint style="info" %}
-Required for `cryptocurrency` command.
-{% endhint %}
-
-{% embed url="https://coinmarketcap.com/api/" %}
-
-### NASA API Key
-
-{% hint style="info" %}
-Required for `apod` command.
-{% endhint %}
-
-{% embed url="https://api.nasa.gov" %}
-
-### OpenWeatherMap API Key
-
-{% hint style="info" %}
-Required for `weather` command.
-{% endhint %}
-
-{% embed url="https://openweathermap.org/api" %}
-
 ### Patreon API Key
 
-{% hint style="warning" %}
-Not required at the moment.
-{% endhint %}
+&#x20;Required by `patrons` command.
 
-### TMDB API Key
+Go to the [Patreon Client Registration](https://www.patreon.com/portal/registration/register-clients).
 
-{% hint style="info" %}
-Required for `movie` and `tv` commands.
-{% endhint %}
+Click on the **Create Client** button.
 
-{% embed url="https://www.themoviedb.org/documentation/api" %}
+Fill up the details as applicable, and click on the **Create Client** button at the bottom.
 
-### Tracker Network API Key
-
-{% hint style="info" %}
-Required for `apex`, `csgo`, and `fortnite` commands.
-{% endhint %}
-
-{% embed url="https://tracker.gg/developers" %}
+Now that your client is registered, you'll see the required credentials listed under your client.
 
 ### Twitch API Key
 
-{% hint style="info" %}
-Required for Twitch Live notifications, `live-streams` and `game` commands.
-{% endhint %}
+&#x20;Required by `live-streams` command.
 
-{% embed url="https://dev.twitch.tv/docs/authentication/register-app" %}
-
-### Wordnik API Key
-
-{% hint style="info" %}
-Required for `definitions` command.
-{% endhint %}
-
-{% embed url="https://developer.wordnik.com" %}
+Read [this article](https://dev.twitch.tv/docs/authentication/#registration) on [How to get Twitch API Client ID & Client Secret](https://dev.twitch.tv/docs/authentication/#registration).
