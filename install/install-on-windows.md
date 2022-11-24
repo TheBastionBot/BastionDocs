@@ -2,7 +2,9 @@
 
 ### Downloading the installer
 
-[Right Click here](https://raw.github.com/TheBastionBot/BastionScripts/master/windows/chocolatey.ps1) and Click **Save Link As…** and Save the file as `BastionInstaller.ps1` (Bastion Installer for Windows).
+[Right Click here](https://raw.github.com/TheBastionBot/BastionScripts/main/windows/chocolatey.ps1) and Click **Save Link As…** and Save the file as `BastionInstaller.ps1` (Bastion Installer for Windows).
+
+{% embed url="https://raw.github.com/TheBastionBot/BastionScripts/main/windows/chocolatey.ps1" %}
 
 ### Installing Bastion
 

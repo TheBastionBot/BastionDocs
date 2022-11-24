@@ -2,16 +2,23 @@
 
 ## Downloading the installer
 
-Downloading the installer is a fairly straight forward process:
+Downloading the installer is a fairly straight forward process.
+
+For Debian and Ubuntu based Linux distributions:
 
 ```bash
-# For Debian and Ubuntu based Linux distributions
 curl -sL https://raw.github.com/TheBastionBot/BastionScripts/main/linux/apt.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
+```
 
-# For Enterprise Linux/Fedora and Snap packages
+For Enterprise Linux/Fedora and Snap packages:
+
+```bash
 curl -sL https://raw.github.com/TheBastionBot/BastionScripts/main/linux/dnf.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
+```
 
-# Or if you've a distro that uses `yum` package manager, we've got you!
+Or if you've a distribution that uses `yum` package manager, we've got you too:
+
+```bash
 curl -sL https://raw.github.com/TheBastionBot/BastionScripts/main/linux/yum.sh -o BastionInstaller.sh && chmod +x BastionInstaller.sh
 ```
 
