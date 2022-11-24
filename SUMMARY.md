@@ -2,9 +2,13 @@
 
 * [Introduction](README.md)
 
+## Prerequisites
+
+* [Add Bot to Server](prerequisites/create.md)
+* [Setup Database](prerequisites/mongodb.md)
+
 ## 📥 Install
 
-* [Prerequisites](install/prerequisites.md)
 * [Get API Keys](install/get-api-keys.md)
 * [Install on Linux](install/install-on-linux.md)
 * [Install on macOS](install/install-on-macos.md)
