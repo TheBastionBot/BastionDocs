@@ -18,13 +18,15 @@ Head over to [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas) and 
 
 Create a database cluster by going to **Database > Create**.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>MongoDB Atlas provides provides one free shared cluster that should be more than enough for Bastion.</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>MongoDB Atlas provides provides one free shared cluster that should be more than enough for Bastion.</p></figcaption></figure>
 
-Add a database user by going to Database Users > Add new user.
+Add a database user by going to **Database Access > Add new database user**.
 
 Use **Password** authentication method. The set the username and password you want. Ensure it is secure though.
 
 Add a **Built-in Role** and select the **Read and write to any database** option and click **Add User** to create the database user.
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 Now head back to **Database** and click on **Connect > Connect your application**.
 
