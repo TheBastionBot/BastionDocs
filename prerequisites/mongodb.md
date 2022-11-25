@@ -1,19 +1,9 @@
 # Setup Database
 
-Bastion uses MongoDB as its data store. You can either install MongoDB on your own system or use MongoDB cloud service like MongoDB Atlas.
+Bastion uses MongoDB to store its data. You can either install MongoDB on your own system or use a MongoDB cloud service like MongoDB Atlas.
 
-{% hint style="info" %}
-You only need to follow one of these steps.
-{% endhint %}
-
-### Install MongoDB <a href="#install-mongodb" id="install-mongodb"></a>
-
-If you want to install MongoDB on your on system follow the installation guide for your operating system before proceeding with the installation.
-
-{% embed url="https://www.mongodb.com/docs/manual/administration/install-community/" %}
-
-### Use MongoDB Atlas
-
+{% tabs %}
+{% tab title="Use MongoDB Atlas" %}
 Head over to [mongodb.com/cloud/atlas](https://www.mongodb.com/cloud/atlas) and signup for a new account.
 
 Create a database cluster by going to **Database > Create**.
@@ -32,8 +22,17 @@ Now head back to **Database** and click on **Connect > Connect your application*
 
 Copy the connection URI and replace the `<password>` in the URI to the password you set for the database user you created earlier.
 
-{% hint style="info" %}
 The URI will look like the following. Make sure to replace `<password>` and `<dbname>`, `<username>` and `<cluster>` will be filled out for you.
 
-`mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbnamne>?retryWrites=true&w=majority`
-{% endhint %}
+```
+mongodb+srv://<username>:<password>@<cluster>.mongodb.net/<dbnamne>?retryWrites=true&w=majority
+```
+{% endtab %}
+
+{% tab title="Install MongoDB" %}
+If you want to install MongoDB on your on system follow the installation guide for your operating system before proceeding with the installation.
+
+{% embed url="https://www.mongodb.com/docs/manual/administration/install-community/" %}
+{% endtab %}
+{% endtabs %}
+

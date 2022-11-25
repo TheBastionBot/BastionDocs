@@ -2,7 +2,7 @@
 
 * [Introduction](README.md)
 
-## Prerequisites
+## 📑 Prerequisites
 
 * [Add Bot to Server](install/prerequisites.md)
 * [Setup Database](prerequisites/mongodb.md)
