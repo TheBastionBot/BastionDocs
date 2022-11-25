@@ -7,10 +7,6 @@ Make sure the `settings.yaml` file is present before you start Bastion. If it is
 * `settings.yaml`
 * `settings.example.yaml`
 
+<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
 Now you can open and edit the `settings.yaml` file to add (or edit) the configurations and credentials for Bastion. After you have done that, save and close the file.
-
-
-
-Now, make a copy of the `.env.example` file and rename the copy to `.env`.
-
-Add your bot's **Client ID** in the `TESSERACT_BOT_ID` field.
