@@ -38,3 +38,10 @@
 ## 🪜 Migrate
 
 * [Upgrade from v8 to v10](migrate/upgrade-from-v8-to-v10.md)
+
+## 👩💻 Developers
+
+* [Code of Conduct](developers/code-of-conduct.md)
+* [Contributing Guidelines](developers/contributing-guidelines/README.md)
+  * [Issues](developers/contributing-guidelines/issues.md)
+  * [Pull Requests](developers/contributing-guidelines/pulls.md)
