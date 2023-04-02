@@ -1,9 +1,5 @@
 # Install on Docker
 
-{% hint style="info" %}
-Bastion's Docker image is not yet available publicly. It'll be available publicly after the next release of Bastion.
-{% endhint %}
-
 ## Downloading the Docker Image
 
 First you need to get Bastion's Docker image from GitHub Container Registry:
@@ -13,6 +9,8 @@ docker pull ghcr.io/TheBastionBot/Bastion
 ```
 
 This will download and save Bastion's docker image on your system.
+
+{% embed url="https://ghcr.io/thebastionbot/bastion" %}
 
 ## Configuring Bastion
 
