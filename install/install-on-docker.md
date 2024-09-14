@@ -5,7 +5,7 @@
 First you need to get Bastion's Docker image from GitHub Container Registry:
 
 ```bash
-docker pull ghcr.io/TheBastionBot/Bastion
+docker pull ghcr.io/thebastionbot/bastion
 ```
 
 This will download and save Bastion's docker image on your system.

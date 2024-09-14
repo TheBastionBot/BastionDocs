@@ -16,12 +16,12 @@
 * [Install on DigitalOcean](install/install-on-digitalocean.md)
 * [Install on Docker](install/install-on-docker.md)
 
-## ⚙ Configure
+## ⚙️ Configure
 
 * [Configure Bastion](configure/configure-bastion.md)
 * [Publish Commands](configure/publish-commands.md)
 
-## ▶ Run
+## ▶️ Run
 
 * [Run on Linux](run/run-on-linux.md)
 * [Run on macOS](run/run-on-macos.md)
@@ -35,7 +35,7 @@
 * [Update on Windows](update/update-on-windows.md)
 * [Update on Docker](update/update-on-docker.md)
 
-## 👩💻 Developers
+## 👩‍💻 Developers
 
 * [Code of Conduct](developers/code-of-conduct.md)
 * [Contributing Guidelines](developers/contributing-guidelines/README.md)
