@@ -1,8 +1,8 @@
 ---
 description: Welcome to The Bastion Bot Documentation Site.
 cover: >-
-  https://c10.patreonusercontent.com/4/patreon-media/p/campaign/754397/054203172bf24aa8a91e327506769a03/eyJ3IjoxOTIwLCJ3ZSI6MX0%3D/5.gif?token-time=1670112000&token-hash=d5_rE-8YNMMTtKZycQpf0mRMgx1Gi11rz9nvh6ERCJ4%3D
-coverY: 0
+  https://images.unsplash.com/photo-1605106325682-3482f7c1c9c4?crop=entropy&cs=srgb&fm=jpg&ixid=M3wxOTcwMjR8MHwxfHNlYXJjaHw2fHxwYXR0ZXJuc3xlbnwwfHx8fDE3MzA0MTQ2NTh8MA&ixlib=rb-4.0.3&q=85
+coverY: -156
 ---
 
 # Introduction
